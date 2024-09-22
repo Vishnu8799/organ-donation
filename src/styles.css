@@ -1,0 +1,301 @@
+/* Topbar styling */
+.topbar {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fix the header to the top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 1000;
+}
+
+.topbar h2 {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+
+/* Sidebar styling */
+.admin-sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  position: fixed;
+  top: 70px; /* This should match the height of the topbar */
+  left: 0;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.admin-sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.admin-sidebar ul li a:hover {
+  color: #007bff;
+}
+
+/* Main content styling */
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px;
+  margin-left: 220px; /* Make space for the sidebar */
+  /* padding: 20px; */
+  overflow-y: auto;
+}
+
+/* Donor List Styles */
+.donor-list {
+  /* padding: 20px; */
+  /* margin-top: 20px; */
+}
+
+/* Search filters styling */
+.search-filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.search-filters input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* No donors found row */
+td[colspan="4"] {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  color: #999;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Adjust width as needed */
+  margin: auto; /* Center the form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.loginheader {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.login_button {
+  background-color: rgba(13, 110, 253, 1);
+  width: 40%;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: JS_Bold;
+  cursor: pointer;
+}
+
+.generatebutton {
+  background-color: rgba(13, 110, 253, 1);
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 5px;
+  font-family: JS_Bold;
+  cursor: pointer;
+}
+
+.inputTime {
+  width: 100%;
+}
+
+/** New login screen @CSS_STYLE */
+
+.login_screen_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.login_card {
+  background-color: white; /* Card background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width for login card */
+}
+
+.login_greeting_con {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login_inputs_con {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_eye_con_fixed {
+  position: relative; /* For positioning the password toggle */
+  margin-bottom: 15px;
+}
+
+.toggle_password {
+  position: absolute;
+  right: 10px; /* Adjust position */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login_button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login_button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+.home-head {
+  background-image: url("./Components/Assets/home.png");
+  width: "110%";
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
